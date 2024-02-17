@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример HTML-страницы</title>
+</head>
+<body>
+    <h1>Лабораторная номер 1</h1>
+    <p><a href="https://www.belstu.by/" target="_blank">Ссылка на сайт БГТУ</a></p>
+    
+    <button onclick="displayBrowserInfo()">Показать информацию о браузере</button>
+    <p id="browserInfo"></p>
+
+    <script>
+        function displayBrowserInfo() {
+            var info = "User Agent: " + navigator.userAgent + "<br>" +
+                       "Platform: " + navigator.platform + "<br>" +
+                       "Cookies Enabled: " + navigator.cookieEnabled + "<br>" +
+                       "Language: " + navigator.language + "<br>" +
+                       "Online Status: " + navigator.onLine + "<br>";
+
+            document.getElementById('browserInfo').innerHTML = info;
+            console.log("Hello World");
+        }
+    </script>
+</body>
+</html>
